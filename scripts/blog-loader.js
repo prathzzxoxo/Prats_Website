@@ -94,10 +94,18 @@ class BlogLoader {
 
     async loadIndex() {
         try {
-            // Get the base path (works for both root and GitHub Pages subdirectory)
-            const basePath = window.location.pathname.includes('/Prats_Website/')
-                ? '/Prats_Website/'
-                : '/';
+            // Detect base path - works for custom domains, GitHub Pages subdirectories, and local
+            let basePath = '/';
+            const hostname = window.location.hostname;
+            const pathname = window.location.pathname;
+
+            // If on GitHub Pages subdirectory (not custom domain)
+            if (hostname.includes('github.io') && !pathname.startsWith('/blogs')) {
+                const pathParts = pathname.split('/').filter(p => p);
+                if (pathParts.length > 0 && pathParts[0] !== 'blogs') {
+                    basePath = '/' + pathParts[0] + '/';
+                }
+            }
 
             const response = await fetch(`${basePath}blogs/index.json`);
             if (!response.ok) throw new Error('Fetch failed');
@@ -178,10 +186,18 @@ class BlogLoader {
 
     async loadBlogContent(filename) {
         try {
-            // Get the base path (works for both root and GitHub Pages subdirectory)
-            const basePath = window.location.pathname.includes('/Prats_Website/')
-                ? '/Prats_Website/'
-                : '/';
+            // Detect base path - works for custom domains, GitHub Pages subdirectories, and local
+            let basePath = '/';
+            const hostname = window.location.hostname;
+            const pathname = window.location.pathname;
+
+            // If on GitHub Pages subdirectory (not custom domain)
+            if (hostname.includes('github.io') && !pathname.startsWith('/blogs')) {
+                const pathParts = pathname.split('/').filter(p => p);
+                if (pathParts.length > 0 && pathParts[0] !== 'blogs') {
+                    basePath = '/' + pathParts[0] + '/';
+                }
+            }
 
             const response = await fetch(`${basePath}blogs/${filename}`);
             if (!response.ok) throw new Error('Fetch failed');

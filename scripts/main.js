@@ -95,10 +95,20 @@ async function init() {
  */
 async function loadData() {
     try {
-        // Get the base path (works for both root and GitHub Pages subdirectory)
-        const basePath = window.location.pathname.includes('/Prats_Website/')
-            ? '/Prats_Website/'
-            : '/';
+        // Detect base path - works for custom domains, GitHub Pages subdirectories, and local
+        let basePath = '/';
+        const hostname = window.location.hostname;
+        const pathname = window.location.pathname;
+
+        // If on GitHub Pages subdirectory (not custom domain)
+        if (hostname.includes('github.io') && !pathname.startsWith('/assets')) {
+            const pathParts = pathname.split('/').filter(p => p);
+            if (pathParts.length > 0 && pathParts[0] !== 'assets') {
+                basePath = '/' + pathParts[0] + '/';
+            }
+        }
+
+        console.log('Base path detected:', basePath, 'Hostname:', hostname);
 
         const [skills, experience, certifications] = await Promise.all([
             fetch(`${basePath}assets/data/skills.json`).then(res => {
