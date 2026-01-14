@@ -51,33 +51,27 @@ async function init() {
         console.log('Page detection:', { isIndexPage, isExperiencePage, isSkillsPage, isBlogsPage });
 
         // Render content based on detected page
-        if (isIndexPage) {
+        if (isExperiencePage) {
+            // Experience page
+            console.log('Rendering experience page content');
+            renderExperience();
+        } else if (isSkillsPage) {
+            // Skills page
+            console.log('Rendering skills page content');
+            renderSkills();
+        } else if (isBlogsPage) {
+            // Blogs page
+            console.log('Rendering blogs page content');
+            if (typeof initBlogLoader === 'function') {
+                await initBlogLoader();
+            }
+        } else if (isIndexPage) {
             // Home page
             console.log('Rendering index page content');
             renderHero();
             renderAbout();
             renderCertifications();
             setupContactForm();
-        }
-
-        if (isExperiencePage) {
-            // Experience page
-            console.log('Rendering experience page content');
-            renderExperience();
-        }
-
-        if (isSkillsPage) {
-            // Skills page
-            console.log('Rendering skills page content');
-            renderSkills();
-        }
-
-        if (isBlogsPage) {
-            // Blogs page
-            console.log('Rendering blogs page content');
-            if (typeof initBlogLoader === 'function') {
-                await initBlogLoader();
-            }
         }
 
         console.log('Initialization complete');
