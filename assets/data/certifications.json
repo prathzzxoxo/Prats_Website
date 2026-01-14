@@ -1,0 +1,29 @@
+{
+  "certifications": [
+    {
+      "name": "CompTIA Security+",
+      "issuer": "CompTIA",
+      "issueDate": "2023",
+      "description": "Industry-standard certification covering network security, compliance, operational security, threats and vulnerabilities, application security, access control, and cryptography",
+      "skills": [
+        "Network Security",
+        "Threat Management",
+        "Security Operations",
+        "Risk Management",
+        "Cryptography",
+        "Identity and Access Management"
+      ]
+    },
+    {
+      "name": "CRIBLE Certified User",
+      "issuer": "CRIBLE",
+      "issueDate": "2024",
+      "description": "Certification demonstrating proficiency in threat intelligence and cybersecurity operations using CRIBLE platform",
+      "skills": [
+        "Threat Intelligence",
+        "Incident Response",
+        "Security Operations"
+      ]
+    }
+  ]
+}

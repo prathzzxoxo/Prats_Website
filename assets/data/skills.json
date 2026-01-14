@@ -1,0 +1,168 @@
+{
+  "categories": [
+    {
+      "name": "SIEM Platforms",
+      "icon": "shield",
+      "description": "Security Information and Event Management platforms for threat detection and monitoring",
+      "skills": [
+        {
+          "name": "Microsoft Sentinel",
+          "level": 90,
+          "description": "Advanced KQL queries, custom analytics rules, log aggregation, incident investigation"
+        },
+        {
+          "name": "Elastic SIEM",
+          "level": 85,
+          "description": "On-premises deployment, log ingestion, threat hunting, detection content development"
+        },
+        {
+          "name": "LevelBlue USM",
+          "level": 80,
+          "description": "Unified security monitoring, alert correlation, multi-client environment management"
+        }
+      ]
+    },
+    {
+      "name": "EDR / Endpoint Security",
+      "icon": "desktop",
+      "description": "Endpoint Detection and Response solutions for malware detection and threat response",
+      "skills": [
+        {
+          "name": "CrowdStrike Falcon",
+          "level": 85,
+          "description": "Endpoint monitoring, threat detection, incident response, behavioral analysis"
+        },
+        {
+          "name": "Microsoft Defender",
+          "level": 90,
+          "description": "Advanced threat protection, automated investigation, endpoint management"
+        },
+        {
+          "name": "Malwarebytes",
+          "level": 80,
+          "description": "Malware detection and remediation, endpoint protection"
+        },
+        {
+          "name": "Trend Micro",
+          "level": 75,
+          "description": "Suspicious process analysis, malware investigation"
+        }
+      ]
+    },
+    {
+      "name": "Email Security",
+      "icon": "email",
+      "description": "Email security platforms for phishing detection and threat mitigation",
+      "skills": [
+        {
+          "name": "Mimecast",
+          "level": 85,
+          "description": "Email threat analysis, phishing investigation, user-reported email triage, malware blocking"
+        }
+      ]
+    },
+    {
+      "name": "Vulnerability Assessment & Penetration Testing",
+      "icon": "bug",
+      "description": "Tools for vulnerability scanning and penetration testing",
+      "skills": [
+        {
+          "name": "Nessus",
+          "level": 80,
+          "description": "Vulnerability scanning, risk assessment, remediation tracking"
+        },
+        {
+          "name": "Burp Suite",
+          "level": 75,
+          "description": "Web application security testing, vulnerability identification"
+        },
+        {
+          "name": "NMAP",
+          "level": 70,
+          "description": "Network discovery, port scanning, service identification"
+        },
+        {
+          "name": "Wireshark",
+          "level": 70,
+          "description": "Network traffic analysis, packet inspection"
+        }
+      ]
+    },
+    {
+      "name": "Security Operations",
+      "icon": "operations",
+      "description": "Core SOC analyst skills and operational capabilities",
+      "skills": [
+        {
+          "name": "Incident Response",
+          "level": 85,
+          "description": "Alert triage, root cause analysis, incident containment and remediation"
+        },
+        {
+          "name": "Threat Detection",
+          "level": 85,
+          "description": "Security alert monitoring, threat identification, MITRE ATT&CK mapping"
+        },
+        {
+          "name": "SIEM Engineering",
+          "level": 80,
+          "description": "Detection content development, log onboarding, custom analytics rules"
+        },
+        {
+          "name": "Alert Triage",
+          "level": 90,
+          "description": "False positive reduction, alert correlation, escalation procedures"
+        },
+        {
+          "name": "Reporting",
+          "level": 85,
+          "description": "Weekly and monthly security reports, stakeholder presentations"
+        }
+      ]
+    },
+    {
+      "name": "Programming & Scripting",
+      "icon": "code",
+      "description": "Programming languages and query languages for security automation",
+      "skills": [
+        {
+          "name": "KQL (Kusto Query Language)",
+          "level": 90,
+          "description": "Advanced queries for Azure Sentinel, log analysis, detection rules"
+        },
+        {
+          "name": "Python",
+          "level": 70,
+          "description": "Security automation, data analysis, scripting"
+        },
+        {
+          "name": "PowerShell",
+          "level": 65,
+          "description": "Windows automation, Active Directory management"
+        }
+      ]
+    },
+    {
+      "name": "Cloud & Infrastructure",
+      "icon": "cloud",
+      "description": "Cloud platforms and infrastructure knowledge",
+      "skills": [
+        {
+          "name": "Azure Security",
+          "level": 80,
+          "description": "Azure Sentinel, security monitoring, cloud security posture"
+        },
+        {
+          "name": "Active Directory",
+          "level": 75,
+          "description": "User account monitoring, login issues, group policy checks, AD hygiene"
+        },
+        {
+          "name": "System Monitoring",
+          "level": 80,
+          "description": "Server health monitoring, CPU/memory/disk utilization, uptime tracking"
+        }
+      ]
+    }
+  ]
+}

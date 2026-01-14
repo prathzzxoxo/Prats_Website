@@ -1,0 +1,67 @@
+{
+  "blogs": [
+    {
+      "id": "rag-agents-soc-automation",
+      "title": "Building RAG Agents for SOC Automation",
+      "description": "A practical guide to implementing Retrieval-Augmented Generation systems for automating threat intelligence gathering and analysis in Security Operations Centers.",
+      "date": "2025-01-10",
+      "tags": ["Automation", "SOC", "RAG", "AI", "Threat Intelligence"],
+      "filename": "rag-agents-soc-automation.md",
+      "readTime": "12 min read"
+    },
+    {
+      "id": "ioc-sweep-grep-vs-python",
+      "title": "IOC Sweep: GREP vs Python Performance Comparison",
+      "description": "Head-to-head comparison of traditional GREP and Python for hunting indicators of compromise across large log datasets. Real-world performance results and practical recommendations.",
+      "date": "2024-12-18",
+      "tags": ["Incident Response", "Tools", "Python", "GREP", "Performance"],
+      "filename": "ioc-sweep-grep-vs-python.md",
+      "readTime": "10 min read"
+    },
+    {
+      "id": "home-server-infrastructure-setup",
+      "title": "Building a Home Lab: My Personal SOC Infrastructure",
+      "description": "Complete guide to building a home security operations lab with Proxmox, monitoring tools, network segmentation, and enterprise-grade security stack on consumer hardware.",
+      "date": "2024-11-05",
+      "tags": ["Home Lab", "Infrastructure", "Proxmox", "SIEM", "Networking"],
+      "filename": "home-server-infrastructure-setup.md",
+      "readTime": "15 min read"
+    },
+    {
+      "id": "kql-threat-hunting",
+      "title": "KQL for Threat Hunting: Advanced Queries for Security Operations",
+      "description": "Practical Kusto Query Language (KQL) techniques for threat hunting in Azure Sentinel and Microsoft security products, with real-world detection queries.",
+      "date": "2024-10-22",
+      "tags": ["KQL", "Threat Hunting", "Azure Sentinel", "SIEM", "Detection Engineering"],
+      "filename": "kql-threat-hunting.md",
+      "readTime": "11 min read"
+    },
+    {
+      "id": "elastic-rally-benchmarking-guide",
+      "title": "Benchmarking Elasticsearch with Rally: A Practical Guide",
+      "description": "Learn how to use Elastic Rally for performance benchmarking and optimization of Elasticsearch clusters. Includes real-world SIEM performance tuning results.",
+      "date": "2024-10-08",
+      "tags": ["Elasticsearch", "Performance", "Rally", "Benchmarking", "Optimization"],
+      "filename": "elastic-rally-benchmarking-guide.md",
+      "readTime": "14 min read"
+    },
+    {
+      "id": "redkey-usb-data-wiping",
+      "title": "Secure Data Wiping with RedKey Pro: A Security Engineer's Review",
+      "description": "Detailed review of the RedKey Pro USB data destroyer for secure drive sanitization. Includes performance tests, compliance considerations, and best practices.",
+      "date": "2024-09-25",
+      "tags": ["Data Security", "Hardware", "Compliance", "Data Destruction", "Tools"],
+      "filename": "redkey-usb-data-wiping.md",
+      "readTime": "13 min read"
+    },
+    {
+      "id": "multi-client-soc-operations",
+      "title": "Managing Security Operations Across Multiple Client Environments",
+      "description": "Strategies for operating as a security analyst in MSSP environments, managing multiple clients simultaneously while maintaining consistent security monitoring.",
+      "date": "2024-09-10",
+      "tags": ["SOC", "MSSP", "Operations", "Client Management", "Best Practices"],
+      "filename": "multi-client-soc-operations.md",
+      "readTime": "10 min read"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "timeline": [
+    {
+      "id": "digital-insights-2024",
+      "company": "Digital Insights",
+      "location": "Dubai, UAE",
+      "position": "Cybersecurity Analyst L1",
+      "duration": "July 2024 - Present",
+      "startDate": "2024-07",
+      "current": true,
+      "description": "Security-focused role with hands-on experience across SIEM, EDR, email security, and vulnerability management",
+      "responsibilities": [
+        "Monitored, analyzed, and investigated security incidents to identify and mitigate potential threats using SIEM, EDR, and email security platforms",
+        "Performed alert triage, root cause analysis, and escalation to ensure timely incident containment and remediation",
+        "Collaborated with IT, infrastructure, and security teams to develop and support incident response workflows and security policies",
+        "Managed multiple client environments, delivering proactive security monitoring and tailored detection and response based on each client's risk profile",
+        "Supported SIEM onboarding, deployment, and detection content development to enhance threat visibility and reduce false positives",
+        "Prepared and presented weekly and monthly security reports, translating technical findings into actionable insights for stakeholders"
+      ],
+      "technologies": [
+        {
+          "name": "Microsoft Sentinel",
+          "category": "SIEM"
+        },
+        {
+          "name": "Elastic SIEM",
+          "category": "SIEM"
+        },
+        {
+          "name": "LevelBlue USM",
+          "category": "SIEM"
+        },
+        {
+          "name": "CrowdStrike Falcon",
+          "category": "EDR"
+        },
+        {
+          "name": "Microsoft Defender",
+          "category": "EDR"
+        },
+        {
+          "name": "Malwarebytes",
+          "category": "EDR"
+        },
+        {
+          "name": "Mimecast",
+          "category": "Email Security"
+        },
+        {
+          "name": "Nessus",
+          "category": "VAPT"
+        },
+        {
+          "name": "Burp Suite",
+          "category": "VAPT"
+        }
+      ],
+      "highlights": [
+        "Managed security operations for multiple high-profile clients across different industries",
+        "Reduced false positive rate through custom detection rule development",
+        "Successfully onboarded and deployed SIEM solutions for new client environments"
+      ]
+    },
+    {
+      "id": "soliton-project-engineer-2023",
+      "company": "Soliton Technologies",
+      "location": "India",
+      "position": "Project Engineer",
+      "duration": "June 2023 - June 2024",
+      "startDate": "2023-06",
+      "endDate": "2024-06",
+      "current": false,
+      "description": "System health monitoring and Active Directory management role",
+      "responsibilities": [
+        "Performed system health monitoring covering Active Directory (AD), including user account status, login issues, and group policy-related checks",
+        "Maintained basic AD hygiene and user access monitoring to ensure security compliance",
+        "Monitored hardware health and system availability: server uptime, CPU, memory, disk utilization",
+        "Identified and escalated performance or availability issues to appropriate teams",
+        "Supported user-related system issues and coordinated with internal teams for resolution"
+      ],
+      "technologies": [
+        {
+          "name": "Active Directory",
+          "category": "Infrastructure"
+        },
+        {
+          "name": "Windows Server",
+          "category": "Infrastructure"
+        },
+        {
+          "name": "System Monitoring Tools",
+          "category": "Monitoring"
+        },
+        {
+          "name": "PowerShell",
+          "category": "Scripting"
+        }
+      ],
+      "highlights": [
+        "Maintained high system availability through proactive monitoring",
+        "Improved incident response times through effective coordination with internal teams"
+      ]
+    },
+    {
+      "id": "soliton-intern-2023",
+      "company": "Soliton Technologies",
+      "location": "India",
+      "position": "Project Engineer Intern",
+      "duration": "January - June 2023",
+      "startDate": "2023-01",
+      "endDate": "2023-06",
+      "current": false,
+      "description": "Internship focused on SIEM and EDR tool deployment and security monitoring",
+      "responsibilities": [
+        "Assisted during SIEM and EDR tool deployment phases",
+        "Worked with Elastic Stack (on-premises deployment) for security monitoring",
+        "Observed and handled basic security alerts generated from authentication events, system logs, and endpoint activity",
+        "Gained hands-on experience with log ingestion, normalization, and alert triage",
+        "Supported security team in day-to-day monitoring and incident response activities"
+      ],
+      "technologies": [
+        {
+          "name": "Elastic SIEM",
+          "category": "SIEM"
+        },
+        {
+          "name": "EDR Tools",
+          "category": "EDR"
+        },
+        {
+          "name": "Log Analysis",
+          "category": "Security Operations"
+        }
+      ],
+      "highlights": [
+        "Successfully deployed and configured Elastic Stack for security monitoring",
+        "Developed foundational skills in SIEM operations and alert triage"
+      ]
+    }
+  ]
+}
