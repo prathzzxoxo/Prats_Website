@@ -94,7 +94,12 @@ class BlogLoader {
 
     async loadIndex() {
         try {
-            const response = await fetch('blogs/index.json');
+            // Get the base path (works for both root and GitHub Pages subdirectory)
+            const basePath = window.location.pathname.includes('/Prats_Website/')
+                ? '/Prats_Website/'
+                : '/';
+
+            const response = await fetch(`${basePath}blogs/index.json`);
             if (!response.ok) throw new Error('Fetch failed');
             const data = await response.json();
             this.blogs = data.blogs || [];
@@ -173,7 +178,12 @@ class BlogLoader {
 
     async loadBlogContent(filename) {
         try {
-            const response = await fetch(`blogs/${filename}`);
+            // Get the base path (works for both root and GitHub Pages subdirectory)
+            const basePath = window.location.pathname.includes('/Prats_Website/')
+                ? '/Prats_Website/'
+                : '/';
+
+            const response = await fetch(`${basePath}blogs/${filename}`);
             if (!response.ok) throw new Error('Fetch failed');
             const markdown = await response.text();
             return this.parser.parse(markdown);

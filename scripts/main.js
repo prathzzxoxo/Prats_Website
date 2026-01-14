@@ -95,16 +95,21 @@ async function init() {
  */
 async function loadData() {
     try {
+        // Get the base path (works for both root and GitHub Pages subdirectory)
+        const basePath = window.location.pathname.includes('/Prats_Website/')
+            ? '/Prats_Website/'
+            : '/';
+
         const [skills, experience, certifications] = await Promise.all([
-            fetch('assets/data/skills.json').then(res => {
+            fetch(`${basePath}assets/data/skills.json`).then(res => {
                 if (!res.ok) throw new Error('Fetch failed');
                 return res.json();
             }).catch(() => null),
-            fetch('assets/data/experience.json').then(res => {
+            fetch(`${basePath}assets/data/experience.json`).then(res => {
                 if (!res.ok) throw new Error('Fetch failed');
                 return res.json();
             }).catch(() => null),
-            fetch('assets/data/certifications.json').then(res => {
+            fetch(`${basePath}assets/data/certifications.json`).then(res => {
                 if (!res.ok) throw new Error('Fetch failed');
                 return res.json();
             }).catch(() => null)
@@ -112,7 +117,7 @@ async function loadData() {
 
         // If any fetch fails, use inline fallback data
         if (!skills || !experience || !certifications) {
-            console.warn('Using inline fallback data (file:// protocol detected)');
+            console.warn('Using inline fallback data (fetch failed or file:// protocol)');
             loadInlineData();
             return;
         }
