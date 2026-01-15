@@ -22,8 +22,16 @@ class Navigation {
         // Add click listeners to all nav links
         this.navLinks.forEach(link => {
             link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+
+                // Only handle anchor links (starting with #) for smooth scroll
+                // Let page links (starting with /) navigate normally
+                if (!href || !href.startsWith('#')) {
+                    return; // Allow normal navigation for page links
+                }
+
                 e.preventDefault();
-                const targetId = link.getAttribute('href').slice(1);
+                const targetId = href.slice(1);
                 const target = document.getElementById(targetId);
 
                 if (target) {
