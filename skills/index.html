@@ -7,7 +7,7 @@
     <title>Skills & Expertise | Prathana Mahendran</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,9 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/animations.css">
-    <link rel="stylesheet" href="styles/glitch.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/animations.css">
+    <link rel="stylesheet" href="../styles/glitch.css">
 </head>
 <body class="bg-gray-950 text-gray-100 font-sans antialiased">
 
@@ -33,16 +33,16 @@
     <!-- Navigation -->
     <nav id="main-nav" class="fixed top-0 left-0 right-0 z-40 bg-gray-900/80 backdrop-blur-md border-b border-cyan-500/30">
         <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-            <a href="index.html" class="text-2xl font-bold text-cyan-400 glitch font-orbitron" data-text="PM">
+            <a href="/" class="text-2xl font-bold text-cyan-400 glitch font-orbitron" data-text="PM">
                 <span class="text-cyan-400">&lt;</span>PM<span class="text-cyan-400">/&gt;</span>
             </a>
 
             <ul class="hidden md:flex space-x-8">
-                <li><a href="index.html#about" class="nav-link text-gray-300 hover:text-cyan-400 transition-colors">About</a></li>
-                <li><a href="experience.html" class="nav-link text-gray-300 hover:text-cyan-400 transition-colors">Experience</a></li>
-                <li><a href="skills.html" class="nav-link text-cyan-400">Skills</a></li>
-                <li><a href="blogs.html" class="nav-link text-gray-300 hover:text-cyan-400 transition-colors">Blogs</a></li>
-                <li><a href="index.html#contact" class="nav-link text-gray-300 hover:text-cyan-400 transition-colors">Contact</a></li>
+                <li><a href="/#about" class="nav-link text-gray-300 hover:text-cyan-400 transition-colors">About</a></li>
+                <li><a href="/experience" class="nav-link text-gray-300 hover:text-cyan-400 transition-colors">Experience</a></li>
+                <li><a href="/skills" class="nav-link text-cyan-400">Skills</a></li>
+                <li><a href="/blogs" class="nav-link text-gray-300 hover:text-cyan-400 transition-colors">Blogs</a></li>
+                <li><a href="/#contact" class="nav-link text-gray-300 hover:text-cyan-400 transition-colors">Contact</a></li>
             </ul>
 
             <button id="mobile-menu-btn" class="md:hidden text-cyan-400 focus:outline-none">
@@ -54,11 +54,11 @@
 
         <div id="mobile-menu" class="hidden md:hidden bg-gray-900 border-t border-cyan-500/30">
             <ul class="py-4 px-4 space-y-2">
-                <li><a href="index.html#about" class="block py-2 text-gray-300">About</a></li>
-                <li><a href="experience.html" class="block py-2 text-gray-300">Experience</a></li>
-                <li><a href="skills.html" class="block py-2 text-cyan-400">Skills</a></li>
-                <li><a href="blogs.html" class="block py-2 text-gray-300">Blogs</a></li>
-                <li><a href="index.html#contact" class="block py-2 text-gray-300">Contact</a></li>
+                <li><a href="/#about" class="block py-2 text-gray-300">About</a></li>
+                <li><a href="/experience" class="block py-2 text-gray-300">Experience</a></li>
+                <li><a href="/skills" class="block py-2 text-cyan-400">Skills</a></li>
+                <li><a href="/blogs" class="block py-2 text-gray-300">Blogs</a></li>
+                <li><a href="/#contact" class="block py-2 text-gray-300">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -420,8 +420,8 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="scripts/matrix.js"></script>
-    <script src="scripts/navigation.js"></script>
+    <script src="../scripts/matrix.js"></script>
+    <script src="../scripts/navigation.js"></script>
     <script>
         // Set current year
         document.getElementById('current-year').textContent = new Date().getFullYear();
