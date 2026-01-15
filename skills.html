@@ -17,9 +17,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!-- Simple Icons CSS for Tech Logos -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v11/font/simple-icons.min.css">
-
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/animations.css">
@@ -74,8 +71,337 @@
                     <span class="text-cyan-400">Skills</span> <span class="text-gray-400">&</span> <span class="text-purple-400">Expertise</span>
                 </h1>
 
-                <div id="skills-container" class="space-y-12">
-                    <!-- Skills categories will be populated by JavaScript -->
+                <!-- Skills Content - Static HTML -->
+                <div class="space-y-8">
+
+                    <!-- SIEM Platforms -->
+                    <div class="skill-category slide-up mb-8">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="flex items-center justify-center w-9 h-9 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 rounded-lg border border-cyan-500/40">
+                                <span class="text-lg">🛡️</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 font-orbitron">
+                                SIEM Platforms
+                            </h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5">
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-sm flex-shrink-0">☁️</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">Microsoft Sentinel</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">90%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-yellow-400 to-pink-500 flex items-center justify-center text-sm flex-shrink-0">🔍</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">Elastic SIEM</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">85%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-sm flex-shrink-0">🛡️</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">LevelBlue USM</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">80%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EDR / Endpoint Security -->
+                    <div class="skill-category slide-up mb-8">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="flex items-center justify-center w-9 h-9 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 rounded-lg border border-cyan-500/40">
+                                <span class="text-lg">🔒</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 font-orbitron">
+                                EDR / Endpoint Security
+                            </h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5">
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center text-sm flex-shrink-0">🦅</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">CrowdStrike Falcon</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">85%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-sm flex-shrink-0">🛡️</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">Microsoft Defender</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">90%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-sm flex-shrink-0">🔒</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">Malwarebytes</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">80%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center text-sm flex-shrink-0">🔍</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">Trend Micro</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">75%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email Security -->
+                    <div class="skill-category slide-up mb-8">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="flex items-center justify-center w-9 h-9 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 rounded-lg border border-cyan-500/40">
+                                <span class="text-lg">📧</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 font-orbitron">
+                                Email Security
+                            </h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5">
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center text-sm flex-shrink-0">✉️</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">Mimecast</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">85%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- VAPT -->
+                    <div class="skill-category slide-up mb-8">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="flex items-center justify-center w-9 h-9 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 rounded-lg border border-cyan-500/40">
+                                <span class="text-lg">🔍</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 font-orbitron">
+                                Vulnerability Assessment & Penetration Testing
+                            </h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5">
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-red-400 to-orange-500 flex items-center justify-center text-sm flex-shrink-0">🔍</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">Nessus</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">80%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center text-sm flex-shrink-0">🕷️</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">Burp Suite</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">75%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center text-sm flex-shrink-0">🌐</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">NMAP</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">70%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-blue-400 to-teal-500 flex items-center justify-center text-sm flex-shrink-0">🦈</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">Wireshark</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">70%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Security Operations -->
+                    <div class="skill-category slide-up mb-8">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="flex items-center justify-center w-9 h-9 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 rounded-lg border border-cyan-500/40">
+                                <span class="text-lg">⚡</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 font-orbitron">
+                                Security Operations
+                            </h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5">
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-red-400 to-orange-500 flex items-center justify-center text-sm flex-shrink-0">🚨</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">Incident Response</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">85%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-yellow-400 to-red-500 flex items-center justify-center text-sm flex-shrink-0">🎯</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">Threat Detection</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">85%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center text-sm flex-shrink-0">⚙️</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">SIEM Engineering</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">80%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-green-400 to-teal-500 flex items-center justify-center text-sm flex-shrink-0">✅</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">Alert Triage</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">90%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center text-sm flex-shrink-0">📊</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">Reporting</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">85%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Programming & Scripting -->
+                    <div class="skill-category slide-up mb-8">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="flex items-center justify-center w-9 h-9 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 rounded-lg border border-cyan-500/40">
+                                <span class="text-lg">💻</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 font-orbitron">
+                                Programming & Scripting
+                            </h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5">
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center text-sm flex-shrink-0">📝</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">KQL</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">90%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-blue-400 to-yellow-400 flex items-center justify-center text-sm flex-shrink-0">🐍</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">Python</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">70%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-sm flex-shrink-0">⚡</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">PowerShell</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">65%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud & Infrastructure -->
+                    <div class="skill-category slide-up mb-8">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="flex items-center justify-center w-9 h-9 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 rounded-lg border border-cyan-500/40">
+                                <span class="text-lg">☁️</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 font-orbitron">
+                                Cloud & Infrastructure
+                            </h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5">
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-sm flex-shrink-0">☁️</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">Azure Security</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">80%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-sm flex-shrink-0">🏢</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">Active Directory</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">75%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="group bg-gray-900/60 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-500/50 hover:bg-gray-900/80 transition-all duration-300">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-6 h-6 rounded-md bg-gradient-to-br from-green-400 to-teal-500 flex items-center justify-center text-sm flex-shrink-0">📈</div>
+                                    <h4 class="text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors flex-1 truncate">System Monitoring</h4>
+                                    <span class="text-xs font-bold text-purple-400 px-2 py-0.5 bg-purple-500/20 rounded-full whitespace-nowrap">80%</span>
+                                </div>
+                                <div class="skill-bar-container bg-gray-800/50 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-full rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -95,10 +421,15 @@
 
     <!-- Scripts -->
     <script src="scripts/matrix.js"></script>
-    <script src="scripts/animations.js"></script>
-    <script src="scripts/glitch.js"></script>
     <script src="scripts/navigation.js"></script>
-    <script src="scripts/main.js"></script>
+    <script>
+        // Set current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Initialize matrix if available
+        if (typeof initMatrix === 'function') initMatrix();
+        if (typeof initNavigation === 'function') initNavigation();
+    </script>
 
 </body>
 </html>
