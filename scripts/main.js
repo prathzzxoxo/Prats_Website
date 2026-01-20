@@ -42,36 +42,24 @@ async function init() {
             initNavigation();
         }
 
-        // Detect page based on which containers exist (more reliable than pathname)
-        const isExperiencePage = document.getElementById('experience-timeline') !== null;
-        const isSkillsPage = document.getElementById('skills-container') !== null;
-        const isBlogsPage = document.getElementById('blogs-container') !== null;
-        const isIndexPage = !isExperiencePage && !isSkillsPage && !isBlogsPage;
+        // Detect page - check for hero section (only exists on index page)
+        const isIndexPage = document.getElementById('hero') !== null;
 
-        console.log('Page detection:', { isIndexPage, isExperiencePage, isSkillsPage, isBlogsPage });
+        console.log('Page detection:', { isIndexPage });
 
         // Render content based on detected page
-        if (isExperiencePage) {
-            // Experience page
-            console.log('Rendering experience page content');
-            renderExperience();
-        } else if (isSkillsPage) {
-            // Skills page
-            console.log('Rendering skills page content');
-            renderSkills();
-        } else if (isBlogsPage) {
-            // Blogs page
-            console.log('Rendering blogs page content');
-            if (typeof initBlogLoader === 'function') {
-                await initBlogLoader();
-            }
-        } else if (isIndexPage) {
-            // Home page
+        if (isIndexPage) {
+            // Home page - render all sections
             console.log('Rendering index page content');
             renderHero();
             renderAbout();
             renderCertifications();
             setupContactForm();
+
+            // Also load blogs on index page
+            if (typeof initBlogLoader === 'function') {
+                await initBlogLoader();
+            }
         }
 
         console.log('Initialization complete');
